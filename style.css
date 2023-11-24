@@ -19,7 +19,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
 }
 .reset-btn {
   padding: 15px 20px;
@@ -42,9 +41,9 @@ h1 {
   gap: 10px;
   transform-style: preserve-3d;
   perspective: 500px;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
-.card-box {
+.card {
   position: relative;
   width: 100px;
   height: 100px;
@@ -53,5 +52,22 @@ h1 {
   align-items: center;
   font-size: 3rem;
   background-color: #f8f8f8;
+  transform: rotateY(180deg);
   transition: 0.25s;
+}
+.card .card-open {
+  transform: rotateY(0deg);
+}
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #5c5c5c;
+  opacity: 0.8;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+.card-open::after {
+  transform: rotateY(180deg);
 }
