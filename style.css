@@ -9,6 +9,7 @@ body {
   background-color: #f8f8f8;
 }
 
+/* Modal */
 /* --------------------------------------------------------- */
 
 #modal {
@@ -16,7 +17,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* display: none; */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -47,7 +47,13 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+.error-message {
+  margin-top: 2rem;
+  color: #ff0000;
+  height: 1.5rem;
+}
 
+/* Game */
 /* --------------------------------------------------------- */
 
 h1 {
@@ -67,25 +73,6 @@ h1 {
 }
 .game-section {
   display: none;
-}
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.reset-btn {
-  padding: 15px 20px;
-  background-color: #5c5c5c;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  color: #f8f8f8;
-  cursor: pointer;
-}
-.reset-btn:focus {
-  color: #5c5c5c;
-  background: #f8f8f8;
 }
 .game-board {
   width: 540px;
@@ -118,7 +105,7 @@ h1 {
   position: absolute;
   inset: 0;
   background-color: #5c5c5c;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
@@ -126,4 +113,33 @@ h1 {
 .card-open::after,
 .card-match::after {
   transform: rotateY(180deg);
+}
+.player {
+  width: 50%;
+}
+.player-1 .player-2 {
+  width: 25%;
+}
+.player-1-score,
+.player-2-score {
+  margin-top: 1rem;
+}
+.reset-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.reset-btn {
+  padding: 15px 20px;
+  background-color: #5c5c5c;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #f8f8f8;
+  cursor: pointer;
+}
+.reset-btn:focus {
+  color: #5c5c5c;
+  background: #f8f8f8;
 }
