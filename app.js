@@ -55,12 +55,6 @@ function openModal() {
 
 /* --------------------------------------------------------- */
 
-/* startGameBtn.addEventListener('click', () => {
-  player1 !== '' && player2 !== ''
-    ? startGame()
-    : (errorMessage.innerHTML = 'Please enter names for both players to start the game.');
-}); */
-
 startGameBtn.addEventListener('click', () => {
   // Get player names from input fields
   player1 = document.getElementById('player1').value;
