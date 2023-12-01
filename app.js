@@ -61,7 +61,7 @@ startGameBtn.addEventListener('click', () => {
   player2 = document.getElementById('player2').value;
   player1 !== '' && player2 !== ''
     ? startGame()
-    : (errorMessage.innerHTML = 'Please enter names for both players to start the game.');
+    : (errorMessage.innerHTML = 'Please enter names for both players to start the game');
 });
 
 // Function to start the game
