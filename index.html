@@ -8,10 +8,44 @@
     <title>Memory Game</title>
   </head>
   <body>
-    <h1>MEMORY GAME</h1>
-    <div class="game-board"></div>
-    <div class="btn-container">
-      <button class="reset-btn">RESET GAME</button>
+    <!-- The Modal -->
+    <div id="modal">
+      <h2>Enter Player Names</h2>
+      <div class="player-names-input">
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" />
+      </div>
+      <div class="player-names-input">
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" />
+      </div>
+      <button class="start-game-btn">Start Game</button>
     </div>
+
+    <h1>MEMORY GAME</h1>
+    <main>
+      <!-- Players -->
+      <section class="players-section">
+        <div class="player-1-container">
+          <p class="player-1-name"></p>
+          <p class="player-1-score"></p>
+        </div>
+
+        <h2 class="player">Player 1's turn</h2>
+
+        <div class="player-2-container">
+          <p class="player-2-name"></p>
+          <p class="player-2-score"></p>
+        </div>
+      </section>
+
+      <!-- Game section-->
+      <section class="game-section">
+        <div class="game-board"></div>
+        <div class="btn-container">
+          <button class="reset-btn">RESET GAME</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
