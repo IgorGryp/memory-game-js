@@ -55,6 +55,7 @@ function openModal() {
 
 /* --------------------------------------------------------- */
 
+/* Start the game */
 startGameBtn.addEventListener('click', () => {
   // Get player names from input fields
   player1 = document.getElementById('player1').value;
