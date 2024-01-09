@@ -105,7 +105,7 @@ h1 {
   position: absolute;
   inset: 0;
   background-color: #5c5c5c;
-  /* opacity: 0.8; */
+  opacity: 0.8;
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
@@ -142,4 +142,75 @@ h1 {
 .reset-btn:focus {
   color: #5c5c5c;
   background: #f8f8f8;
+}
+
+@media only screen and (max-width: 768px) {
+  .player-names-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .player-names-input label {
+    margin-bottom: 0.8rem;
+  }
+  .player-1-container {
+    margin-left: 1rem;
+  }
+  .player-2-container {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #modal {
+    width: 60%;
+  }
+  .player {
+    font-size: 1.6rem;
+  }
+  .game-board {
+    width: 424px;
+    height: 424px;
+    gap: 6px;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 478px) {
+  .player-1-container {
+    margin-left: 0;
+  }
+  .player-2-container {
+    margin-right: 0;
+  }
+  .game-board {
+    width: 324px;
+    height: 324px;
+    gap: 6px;
+  }
+  .card {
+    width: 60px;
+    height: 60px;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 424px) {
+  #modal {
+    width: 70%;
+  }
+  .player {
+    font-size: 1.4rem;
+  }
+  .player-1-name,
+  .player-2-name,
+  .player-1-score,
+  .player-2-score {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #modal {
+    width: 80%;
+  }
 }
