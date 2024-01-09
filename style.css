@@ -105,7 +105,7 @@ h1 {
   position: absolute;
   inset: 0;
   background-color: #5c5c5c;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
